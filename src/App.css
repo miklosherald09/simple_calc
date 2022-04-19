@@ -1,0 +1,47 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.wrapper{
+  width: 20em;
+  height: 30em;
+  margin: 10em auto;
+  border: solid 1px #ccc;
+  display: flex;
+  flex-direction: column;
+}
+
+.display{
+  background-color: 'red';
+}
+.display p{
+  text-align: right;
+  font-size: 3em;
+  padding: 10px;
+  margin: 0;
+  min-height: 1em;
+}
+.expand{
+  /* width: 100%;
+  height: 100%; */
+}
+
+.button-groups{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+.button-groups > div{
+  margin-bottom: 1px;
+  flex: 1;
+  display: flex;
+}
+.button-groups > div > button{
+  flex: 1;
+  font-size: 2em;
+}
