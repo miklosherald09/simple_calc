@@ -32,6 +32,9 @@ function ButtonGroups() {
     setVal(String( eval(  val / 100 ) ))
   }
   
+  function _negate(){
+    setVal(String( eval(  val +" * -1" ) ))
+  }
 
   return (
     <div className="button-groups">
@@ -44,6 +47,7 @@ function ButtonGroups() {
         <Pressable onPress={() => _setOps("/")} title={"/"}/>
         <Pressable onPress={() => _setVal(".")} title={"."}/>
         <Pressable onPress={() => _perc()} title={"%"}/>
+        <Pressable onPress={() => _negate()} title={"±"}/>
       </div>
       <div>
         <Pressable onPress={() => _setVal(1)} title={1} />
